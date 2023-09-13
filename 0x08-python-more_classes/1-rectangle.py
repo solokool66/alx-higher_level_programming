@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+
 """Defines a Rectangle class."""
 
 class Rectangle:
     """Represent a rectangle."""
 
-    def __init__(self, width=0, height=0):
+def __init__(self, width=0, height=0):
      """Initialize a new Rectangle.
 
         Args:
@@ -15,12 +16,12 @@ class Rectangle:
         self.height = height
 
     @property
-    def width(self):
+def width(self):
         """Get/set the width of the rectangle."""
         return self.__width
 
     @width.setter
-    def width(self, value):
+def width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
